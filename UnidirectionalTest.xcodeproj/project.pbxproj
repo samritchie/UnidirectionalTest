@@ -8,20 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		22D636FF1C335C5C00ADD91B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D636FE1C335C5C00ADD91B /* AppDelegate.swift */; };
-		22D637011C335C5C00ADD91B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D637001C335C5C00ADD91B /* ViewController.swift */; };
+		22D637011C335C5C00ADD91B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D637001C335C5C00ADD91B /* ListViewController.swift */; };
 		22D637041C335C5C00ADD91B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D637021C335C5C00ADD91B /* Main.storyboard */; };
 		22D637061C335C5C00ADD91B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D637051C335C5C00ADD91B /* Assets.xcassets */; };
 		22D637091C335C5C00ADD91B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D637071C335C5C00ADD91B /* LaunchScreen.storyboard */; };
+		22D637151C335CAC00ADD91B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D637111C335CA200ADD91B /* Realm.framework */; };
+		22D637161C335CAC00ADD91B /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22D637111C335CA200ADD91B /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		22D637171C335CAC00ADD91B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D637121C335CA200ADD91B /* RealmSwift.framework */; };
+		22D637181C335CAC00ADD91B /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22D637121C335CA200ADD91B /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		22D6371B1C335CC400ADD91B /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6371A1C335CC400ADD91B /* Store.swift */; };
+		22D6371D1C335D8C00ADD91B /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6371C1C335D8C00ADD91B /* Action.swift */; };
+		22D6371F1C335DA400ADD91B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6371E1C335DA400ADD91B /* Models.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22D637191C335CAC00ADD91B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				22D637181C335CAC00ADD91B /* RealmSwift.framework in Embed Frameworks */,
+				22D637161C335CAC00ADD91B /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		22D636FB1C335C5C00ADD91B /* UnidirectionalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnidirectionalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D636FE1C335C5C00ADD91B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22D637001C335C5C00ADD91B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22D637001C335C5C00ADD91B /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		22D637031C335C5C00ADD91B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22D637051C335C5C00ADD91B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22D637081C335C5C00ADD91B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22D6370A1C335C5C00ADD91B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22D637111C335CA200ADD91B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		22D637121C335CA200ADD91B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		22D6371A1C335CC400ADD91B /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		22D6371C1C335D8C00ADD91B /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		22D6371E1C335DA400ADD91B /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D637151C335CAC00ADD91B /* Realm.framework in Frameworks */,
+				22D637171C335CAC00ADD91B /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +67,7 @@
 		22D636F21C335C5C00ADD91B = {
 			isa = PBXGroup;
 			children = (
+				22D637101C335CA200ADD91B /* Frameworks */,
 				22D636FD1C335C5C00ADD91B /* UnidirectionalTest */,
 				22D636FC1C335C5C00ADD91B /* Products */,
 			);
@@ -55,13 +85,26 @@
 			isa = PBXGroup;
 			children = (
 				22D636FE1C335C5C00ADD91B /* AppDelegate.swift */,
-				22D637001C335C5C00ADD91B /* ViewController.swift */,
+				22D637001C335C5C00ADD91B /* ListViewController.swift */,
+				22D6371A1C335CC400ADD91B /* Store.swift */,
+				22D6371C1C335D8C00ADD91B /* Action.swift */,
+				22D6371E1C335DA400ADD91B /* Models.swift */,
 				22D637021C335C5C00ADD91B /* Main.storyboard */,
 				22D637051C335C5C00ADD91B /* Assets.xcassets */,
 				22D637071C335C5C00ADD91B /* LaunchScreen.storyboard */,
 				22D6370A1C335C5C00ADD91B /* Info.plist */,
 			);
 			path = UnidirectionalTest;
+			sourceTree = "<group>";
+		};
+		22D637101C335CA200ADD91B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22D637111C335CA200ADD91B /* Realm.framework */,
+				22D637121C335CA200ADD91B /* RealmSwift.framework */,
+			);
+			name = Frameworks;
+			path = UnidirectionalTest/Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +117,7 @@
 				22D636F71C335C5C00ADD91B /* Sources */,
 				22D636F81C335C5C00ADD91B /* Frameworks */,
 				22D636F91C335C5C00ADD91B /* Resources */,
+				22D637191C335CAC00ADD91B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,8 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22D637011C335C5C00ADD91B /* ViewController.swift in Sources */,
+				22D6371B1C335CC400ADD91B /* Store.swift in Sources */,
+				22D6371D1C335D8C00ADD91B /* Action.swift in Sources */,
+				22D637011C335C5C00ADD91B /* ListViewController.swift in Sources */,
 				22D636FF1C335C5C00ADD91B /* AppDelegate.swift in Sources */,
+				22D6371F1C335DA400ADD91B /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +294,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UnidirectionalTest/Frameworks",
+				);
 				INFOPLIST_FILE = UnidirectionalTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.codesplice.UnidirectionalTest;
@@ -258,6 +309,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UnidirectionalTest/Frameworks",
+				);
 				INFOPLIST_FILE = UnidirectionalTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.codesplice.UnidirectionalTest;
@@ -284,6 +339,7 @@
 				22D6370F1C335C5C00ADD91B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
